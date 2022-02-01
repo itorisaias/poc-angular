@@ -1,0 +1,12 @@
+
+<h2>My Todos</h2>
+
+<span *ngIf="loading">Loading...</span>
+
+<ul class="todos">
+  <li
+    *ngFor="let todo of todos"
+  >
+    <span class="badge">{{ todo.id }}</span> - {{ todo.title }}
+  </li>
+</ul>
